@@ -6,9 +6,11 @@
 |-----|----------------------------------------------| ----------|
 |Day 1| Project Description                          | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline      | Complete
+|Day 2| Creating and editing  JSON file              | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| MVP & Bug Fixes                              | Incomplete
 |Day 5| Final Touches                                | Incomplete
+|Day 5| Deployment                                   | Incomplete
 |Day 6| Present                                      | Incomplete
 
 
@@ -79,9 +81,9 @@ I've broken down each part of the website to smaller tasks below.
 | Header - Aligning all the elments          | H        | 2hr            | -hr            | -hr         |
 | About Me - Header                          | H        | 1hr            | -hr            | -hr         |
 | About Me - Paragraph                       | H        | 1hr            | -hr            | -hr         |
-| Projects - Adding Project Images           | H        | 2hr            | -hr            | -hr         |
+| Projects - Adding Project Images - JSON    | H        | 2hr            | -hr            | -hr         |
 | Projects - Grid Layout                     | H        | 2hr            | -hr            | -hr         |
-| Projects - Projects Descriptions           | H        | 2hr            | -hr            | -hr         |
+| Projects - Projects Descriptions - JSON    | H        | 2hr            | -hr            | -hr         |
 | Contact Me - Text box                      | H        | 2hr            | -hr            | -hr         |
 | Contact Me - Paragraph                     | H        | 1hr            | -hr            | -hr         |
 | Contact me - Github, Email, LinkedIn Icons | M        | 1hr            | -hr            | -hr         |
@@ -94,7 +96,8 @@ I've broken down each part of the website to smaller tasks below.
 | Media Mobile - Header                      | M        | 1hr            | -hr            | -hr         |
 | Media Mobile - About Me                    | M        | 1hr            | -hr            | -hr         |
 | Media Mobile - Contact me                  | M        | 1hr            | -hr            | -hr         |
-| Total                                      |          | 32hrs          | -hr            | -hr         |
+| Deployment Time                            | M        | 6hr            | -hr            | -hr         |
+| Total                                      |          | 37hrs          | -hr            | -hr         |
 
 #### PostMVP
 | Component                                  | Priority | Estimated Time | Time Investted | Actual Time |
@@ -102,7 +105,8 @@ I've broken down each part of the website to smaller tasks below.
 | Animations                                 | L        | 4hr            | -hr            | -hr         |
 | Media Mobile - Drop Down Nav Bar           | M        | 4hr            | -hr            | -hr         |
 | Projects - Projects Descriptions on Hover  | H        | 4hr            | -hr            | -hr         |
-| Total                                      |          | 12hrs          | -hr            | -hr         |
+| Improve styling of website                 | H        | 4hr            | -hr            | -hr         |
+| Total                                      |          | 16hrs          | -hr            | -hr         |
 
 
 
