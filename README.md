@@ -68,7 +68,7 @@ I've broken down each part of the website to smaller tasks below.
 
 #### MVP
 
-| Component                                  | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component                                  | Priority | Estimated Time | Time Invested | Actual Time |
 | ---                                        | :---:    |  :---:         | :---:          | :---:       |
 | Header - Nav Bar                           | H        | 1hr            | -hr            | -hr         |
 | Header - Background Image                  | H        | 1hr            | -hr            | -hr         |
@@ -97,7 +97,7 @@ I've broken down each part of the website to smaller tasks below.
 | Total                                      |          | 32hrs          | -hr            | -hr         |
 
 #### PostMVP
-| Component                                  | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component                                  | Priority | Estimated Time | Time Investted | Actual Time |
 | ---                                        | :---:    |  :---:         | :---:          | :---:       |
 | Animations                                 | L        | 4hr            | -hr            | -hr         |
 | Media Mobile - Drop Down Nav Bar           | M        | 4hr            | -hr            | -hr         |
