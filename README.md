@@ -32,6 +32,8 @@ For Project 1, I will be creating a personal website that displays work I have d
 Some inspiration for animations has come from [pursuit](https://www.pursuit.org/fellowship). I also really like their web design.
 A lot of inspiration came from exercises we've worked on in class.
 
+* Link to [Json](https://spreadsheets.google.com/feeds/list/1WwRy_ACtDyNErhvQjLKHFIjXRa3dNW7NxlT_Kza1RzU/od6/public/values?alt=json)
+
 ## Wireframes
 
 Wireframes were done using [Mockflow](https://mockflow.com/app/#Wireframe).
@@ -72,6 +74,7 @@ I've broken down each part of the website to smaller tasks below.
 
 | Component                                  | Priority | Estimated Time | Time Invested | Actual Time |
 | ---                                        | :---:    |  :---:         | :---:          | :---:       |
+| HTML skeleton setup for section            | H        | 1hr            | 6hr            | -hr         |
 | Header - Nav Bar                           | H        | 1hr            | -hr            | -hr         |
 | Header - Background Image                  | H        | 1hr            | -hr            | -hr         |
 | Header - Photo                             | H        | 1hr            | -hr            | -hr         |
