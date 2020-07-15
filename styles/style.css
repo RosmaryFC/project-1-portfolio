@@ -1,3 +1,65 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --cream-color: #F9F1F0 ;
+    --rose-quartz-color: #FADCD9 ;
+    --dusty-rose-color: #F8AFA6 ;
+    --coral-color: #F79489 ;
+    --main-font: Roboto;
+}
+
+/* * {
     border: solid 2px gold;
+} */
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+/*TODO: nav bar needs to hit side of screen*/
+/*TODO: add transition to nav positions */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: var(--coral-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 5px solid var(--cream-color);
+}
+
+nav > ul {
+    display: inline-flex;
+    list-style-type: none;
+    padding-left: 50px;
+
+}
+
+nav > ul > li a:link {
+    padding: 5px 50px;
+    color: var(--cream-color);
+    font-weight: 900;
+    font-family: var(--main-font);
+}
+
+nav > ul > li a:visited {
+    color: var(--cream-color);
+}
+
+nav > ul > li a:hover {
+    background-color: var(--cream-color);
+    color: var(--coral-color);
+    cursor: pointer;
+}
+
+header {
+    background-image: url(assets/ilya-pavlov-unsplash.jpg);
+    background-color: black;
+}
+
+
+img {
+    width: 500px;
 }

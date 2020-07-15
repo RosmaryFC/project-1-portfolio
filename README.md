@@ -75,7 +75,7 @@ I've broken down each part of the website to smaller tasks below.
 | Component                                  | Priority | Estimated Time | Time Invested | Actual Time |
 | ---                                        | :---:    |  :---:         | :---:          | :---:       |
 | HTML skeleton setup for section            | H        | 1hr            | 6hr            | -hr         |
-| Header - Nav Bar                           | H        | 1hr            | -hr            | -hr         |
+| Header - Nav Bar                           | H        | 1hr            | 3hr            | -hr         |
 | Header - Background Image                  | H        | 1hr            | -hr            | -hr         |
 | Header - Photo                             | H        | 1hr            | -hr            | -hr         |
 | Header -  Name                             | H        | 1hr            | -hr            | -hr         |
@@ -117,6 +117,7 @@ I've broken down each part of the website to smaller tasks below.
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project.
  - JQuery
+ - font-awesome
 
 
 ## Code Snippet
@@ -131,6 +132,8 @@ function reverse(string) {
 
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
+
+ wanted to be able to easily change colors down the line: found this [site](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) that helped me set colors to variables. Another [site](https://css-tricks.com/breaking-css-custom-properties-out-of-root-might-be-a-good-idea/) relating to topic.
 
 #### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
