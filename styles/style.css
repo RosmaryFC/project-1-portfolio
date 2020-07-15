@@ -54,12 +54,27 @@ nav > ul > li a:hover {
     cursor: pointer;
 }
 
+/* TODO:get image to show as background for header */
 header {
-    background-image: url(assets/ilya-pavlov-unsplash.jpg);
+    background-image: url(../assets/ilya-pavlov-unsplash.jpg);
     background-color: black;
 }
 
+header > div {
+    border: 2px solid gold;
+    
+}
 
 img {
-    width: 500px;
+    max-width: 25%;
+    /*TODO: ASK JEREMY WHY DOESN'T MARGIN 0 AUTO EVER WORK FOR MEEE :( */
+    margin: 0 auto;
+    padding-left: 300px;
+
+}
+
+/*TODO: center elements, change font */
+#quote-container {
+    color: var(--coral-color);
+    background-color: var(--cream-color);
 }

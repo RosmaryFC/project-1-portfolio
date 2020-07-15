@@ -76,7 +76,7 @@ I've broken down each part of the website to smaller tasks below.
 | ---                                        | :---:    |  :---:         | :---:          | :---:       |
 | HTML skeleton setup for section            | H        | 1hr            | 6hr            | -hr         |
 | Header - Nav Bar                           | H        | 1hr            | 3hr            | -hr         |
-| Header - Background Image                  | H        | 1hr            | -hr            | -hr         |
+| Header - Background Image                  | H        | 1hr            | 15/60hr        | -hr         |
 | Header - Photo                             | H        | 1hr            | -hr            | -hr         |
 | Header -  Name                             | H        | 1hr            | -hr            | -hr         |
 | Header -  Occupation                       | H        | 1hr            | -hr            | -hr         |
