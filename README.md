@@ -76,20 +76,20 @@ I've broken down each part of the website to smaller tasks below.
 | ---                                        | :---:    |  :---:         | :---:          | :---:       |
 | HTML skeleton setup for section            | H        | 1hr            | 6hr            | -hr         |
 | Header - Nav Bar                           | H        | 1hr            | 3hr            | -hr         |
-| Header - Background Image                  | H        | 1hr            | 15/60hr        | -hr         |
-| Header - Photo                             | H        | 1hr            | -hr            | -hr         |
-| Header -  Name                             | H        | 1hr            | -hr            | -hr         |
-| Header -  Occupation                       | H        | 1hr            | -hr            | -hr         |
-| Header -  Quote Bar                        | H        | 1hr            | -hr            | -hr         |
-| Header - Aligning all the elments          | H        | 2hr            | -hr            | -hr         |
-| About Me - Header                          | H        | 1hr            | -hr            | -hr         |
+| Header - Background Image                  | H        | 1hr            | 0.5hr          | -hr         |
+| Header - Photo                             | H        | 1hr            | 0.5hr          | -hr         |
+| Header -  Name                             | H        | 1hr            | 0.5hr          | -hr         |
+| Header -  Occupation                       | H        | 1hr            | 0hr            | -hr         |
+| Header -  Quote Bar                        | H        | 1hr            | 0.5hr          | -hr         |
+| Header - Aligning all the elements         | H        | 2hr            | 6hr            | -hr         |
+| About Me - Header                          | H        | 1hr            | 0.25hr         | -hr         |
 | About Me - Paragraph                       | H        | 1hr            | -hr            | -hr         |
 | Projects - Adding Project Images - JSON    | H        | 2hr            | -hr            | -hr         |
 | Projects - Grid Layout                     | H        | 2hr            | -hr            | -hr         |
 | Projects - Projects Descriptions - JSON    | H        | 2hr            | -hr            | -hr         |
-| Contact Me - Text box                      | H        | 2hr            | -hr            | -hr         |
+| Contact Me - Text box                      | H        | 2hr            | 1hr            | -hr         |
 | Contact Me - Paragraph                     | H        | 1hr            | -hr            | -hr         |
-| Contact me - Github, Email, LinkedIn Icons | M        | 1hr            | -hr            | -hr         |
+| Contact me - Github, Email, LinkedIn Icons | M        | 1hr            | 0.25hr         | -hr         |
 | Media Tablet - Header                      | M        | 1hr            | -hr            | -hr         |
 | Media Tablet - About Me                    | M        | 1hr            | -hr            | -hr         |
 | Media Tablet - Projects                    | M        | 2hr            | -hr            | -hr         |
@@ -100,7 +100,8 @@ I've broken down each part of the website to smaller tasks below.
 | Media Mobile - About Me                    | M        | 1hr            | -hr            | -hr         |
 | Media Mobile - Contact me                  | M        | 1hr            | -hr            | -hr         |
 | Deployment Time                            | M        | 6hr            | -hr            | -hr         |
-| Total                                      |          | 37hrs          | -hr            | -hr         |
+| Research                                   | M        | 0hr            | 6hr            | -hr         |
+| Total                                      |          | 37hrs          | 17.5hr         | -hr         |
 
 #### PostMVP
 | Component                                  | Priority | Estimated Time | Time Investted | Actual Time |

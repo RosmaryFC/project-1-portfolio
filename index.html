@@ -13,67 +13,71 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about-me">ABOUT</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#home-container">HOME</a></li>
+            <li><a href="#about-me-container">ABOUT</a></li>
+            <li><a href="#projects-container">PROJECTS</a></li>
+            <li><a href="#contact-container">CONTACT</a></li>
         </ul>
     </nav>
-    <header id="home">
+    <header id="home-container">
         <div> 
-            <img src="assets/rosmary-fermin.jpg">
-            <h1 id="name"> Hi, I'm Rosmary</h1>
+            <img id="my-image" src="assets/rosmary-fermin.jpg">
+            <div id="name-container">
+                <h1 id="name"> Hi, I'm Rosmary</h1>
+            </div>
         </div>
-        <section id="quote-container">
-            <p>"Fall in love with the process and the results will follow."</p>
-            <p>- Bradley Whitford</p>
-        </section>
     </header>
-    <section id="about-me">
+    <section id="quote-container">
+        <p>"Fall in love with the process and the results will follow."</p>
+        <p>- Bradley Whitford</p>
+    </section>
+    <section id="about-me-container">
         <h2 class="sub-header">A LITTLE ABOUT ME</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates deleniti vero sed quae assumenda adipisci molestias ea possimus iste odit quidem earum, ab omnis nesciunt expedita neque consequatur recusandae fugiat!</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas, modi nemo, possimus perferendis similique ipsa odit ut asperiores cumque in, sapiente id animi blanditiis eligendi dignissimos repudiandae! Corrupti, sequi!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempora, nulla iusto, pariatur illum quidem ex voluptatum iure accusamus velit possimus suscipit et ab voluptates nihil. Ut numquam a excepturi?</p>
     </section>
-    <section id="projects">
+    <section id="projects-container">
         <div>
-            <h2 class="sub-header">PROJECTS</h2>
-            <div id="project-container">
+            <h2 id="projects" class="sub-header">PROJECTS</h2>
+            <div id="project-items-container">
             </div>
         </div>
     </section>
-    <section id="contact">
-        <h2 class="sub-header">LET'S CHAT</h2>
-        <div id=contact-icons-container">
-            <p>Looking forward to connecting!</p>
-            <ul>
-                <li class="icon">
-                    <a href="https://github.com/RosmaryFC">
-                        <i class="fab fa-github-alt fa-2x"></i>
-                    </a>
-                </li>
-                <li class="icon">
-                    <a href="https://www.linkedin.com/in/rosmaryfermin/">
-                        <i class="fab fa-linkedin-in fa-2x"></i>
-                    </a>
-                </li>
-                <li class="icon">
-                    <a href="https://rosmaryfc.wordpress.com/">
-                        <i class="fab fa-wordpress-simple fa-2x"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div id="contact-message">
-            <h3>Leave A Message</h3>
-            <div id="contact-text-inputs">
-                <!--TODO: add action send info to email -->
-                <form action="">
-                    <input type="text" id="form-name" placeholder="Name goes here"> </input>
-                    <input type="email" id="form-email" placeholder="yourEmail@example.com"></input>
-                    <textarea name="user-response" id="form-body" placeholder="write your message here!"></textarea>
-                    <button>Send</button>
-                </form>
+    <section id="contact-container">
+        <h2 class="sub-header" id="lets-chat">LET'S CHAT</h2>
+        <div id="contact-icons-message-container">
+            <div id="contact-icons-container">
+                <p>Looking forward to connecting!</p>
+                <ul id="contact-icons-list">
+                    <li class="icon">
+                        <a href="https://github.com/RosmaryFC">
+                            <i class="fab fa-github-alt fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="icon">
+                        <a href="https://www.linkedin.com/in/rosmaryfermin/">
+                            <i class="fab fa-linkedin-in fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="icon">
+                        <a href="https://rosmaryfc.wordpress.com/">
+                            <i class="fab fa-wordpress-simple fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="contact-message-container">
+                <h3>Leave A Message</h3>
+                <div id="contact-text-inputs">
+                    <!--TODO: add action send info to email -->
+                    <form action="" id="contact-message-inputs">
+                        <input type="text" id="form-name" placeholder="Name goes here"> </input>
+                        <input type="email" id="form-email" placeholder="yourEmail@example.com"></input>
+                        <textarea name="user-response" id="form-body" placeholder="write your message here!"></textarea>
+                        <button>Send</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>

@@ -8,15 +8,21 @@
     --main-font: Roboto;
 }
 
-/* * {
-    border: solid 2px gold;
-} */
+* {
+    font-family: var(--main-font);
+}
+
+body {
+    margin: 0;
+}
+
+/* ----------------NAV------------------- */
 
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
-/*TODO: nav bar needs to hit side of screen*/
+
 /*TODO: add transition to nav positions */
 nav {
     display: flex;
@@ -41,7 +47,6 @@ nav > ul > li a:link {
     padding: 5px 50px;
     color: var(--cream-color);
     font-weight: 900;
-    font-family: var(--main-font);
 }
 
 nav > ul > li a:visited {
@@ -54,27 +59,153 @@ nav > ul > li a:hover {
     cursor: pointer;
 }
 
-/* TODO:get image to show as background for header */
+/* ----------------SUB HEADERS------------------- */
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* ----------------HEADER------------------- */
+
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: url(../assets/ilya-pavlov-unsplash.jpg);
-    background-color: black;
+    height: 500px;
+    border-bottom: 5px solid var(--coral-color);
 }
 
 header > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     border: 2px solid gold;
-    
+    color: white;
 }
 
-img {
+/*TODO: set image and background to have white transparent look */
+#my-image {
     max-width: 25%;
-    /*TODO: ASK JEREMY WHY DOESN'T MARGIN 0 AUTO EVER WORK FOR MEEE :( */
-    margin: 0 auto;
-    padding-left: 300px;
+    border-radius: 190px;
+    /* TODO: filter for mozilla and for internet explorer */
+    /* https://www.w3schools.com/howto/howto_css_image_bw.asp */
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background-color: white;
 
 }
+
+#name {
+    display: inline;
+    font-size: 3em;
+}
+
+/* ----------------QUOTE------------------- */
 
 /*TODO: center elements, change font */
 #quote-container {
     color: var(--coral-color);
     background-color: var(--cream-color);
+    text-align: center;
+    padding: 1em 4em;
+
 }
+
+/* ----------------ABOUT ME------------------- */
+
+#about-me-container {
+    color: var(--coral-color);
+    border-bottom: 5px solid var(--cream-color);
+    padding: 1em 4em;
+
+}
+
+/* ----------------PROJECTS------------------- */
+
+#projects {
+    background-color: var(--coral-color);
+    color: var(--cream-color);
+    padding: 20px;
+    margin: 0;
+}
+
+/* TODO: fix after projects have been added */
+#project-items-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------------CONTACTS------------------- */
+
+#contact-container {
+    background-color: var(--rose-quartz-color);
+    color: white;
+    padding: 1em 4em;
+    border-top:5px solid var(--coral-color);
+
+}
+
+#contact-icons-message-container {
+    display: grid;
+    grid-template-areas: "leftSide rightSide";
+    align-items: center;
+}
+
+#contact-icons-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-icons-list {
+    grid-area: leftSide;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+i {
+    text-decoration: none;
+    color: white;
+    padding: 0 1em;
+}
+
+#contact-message-container {
+    grid-area: rightSide;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form  > *{
+    border: 1px solid var(--dusty-rose-color);
+    margin: 10px;
+    padding: 5px;
+    width: 300px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+
+}
+
+form > button {
+    width: auto;
+    color: var(--coral-color);
+    background-color: white;
+    padding: 5px 20px;
+    align-self: flex-end;
+}
+
+
+
+
