@@ -57,13 +57,14 @@ nav > ul > li a:hover {
     background-color: var(--cream-color);
     color: var(--coral-color);
     cursor: pointer;
+    border-radius: 10px;
 }
 
 /* ----------------SUB HEADERS------------------- */
 
 h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 /* ----------------HEADER DIV------------------- */
@@ -73,8 +74,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(../assets/ilya-pavlov-unsplash.jpg);
-    height: 500px;
+    background-image: url(../assets/john-adams-unsplash.jpg);
+    background-size: 100%;
+    height: 400px;
     border-bottom: 5px solid var(--coral-color);
 }
 
@@ -99,18 +101,26 @@ header > div {
 
 #name {
     display: inline;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 /* ----------------QUOTE------------------- */
 
-/*TODO: center elements, change font */
 #quote-container {
-    font-family: 'Dancing Script';
     color: var(--coral-color);
     background-color: var(--cream-color);
     text-align: center;
-    padding: 1em 4em;
+    padding: 1em 10em;
+}
+
+#quote {
+    font-family: 'Dancing Script';
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#quote-author {
+    padding-left: 400px;
 }
 
 /* ----------------ABOUT ME------------------- */
@@ -118,7 +128,7 @@ header > div {
 #about-me-container {
     color: var(--coral-color);
     border-bottom: 5px solid var(--cream-color);
-    padding: 1em 4em;
+    padding: 1em 10em;
 }
 
 /* ----------------PROJECTS------------------- */
@@ -130,18 +140,64 @@ header > div {
     margin: 0;
 }
 
-/* TODO: fix after projects have been added */
 #project-items-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+/* DIVs added using Jquery */
+/* TODO: add transition for projects coming into the page */
+.project-item {
+    padding: 2em 10em;
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.project-img-div {
+    /* border: 2px solid black; */
+    border: 30px solid var(--cream-color);
+    background-color: var(--cream-color);
+    /* border-radius: 100px; */
+    border-radius: 100px 0 0 100px;
+}
+
+/* TODO: align img in center of box */
+.project-img-div img {
+    width: 500px;
+}
+
+/* TODO: align text in center of box */
+.project-info-div {
+    width: 500px;
+    /* border: 2px solid gold; */
+    border: 10px solid var(--cream-color);
+    background-color: var(--cream-color);
+    border-radius: 0 100px 100px 0;
+    color: var(--dusty-rose-color);
+}
+
+.project-info-div h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.project-info-div p {
+    text-align: center;
+}
 /* ----------------CONTACTS------------------- */
 
 #contact-container {
     background-color: var(--rose-quartz-color);
     color: white;
-    padding: 1em 4em;
+    padding: 1em 10em;
     border-top:5px solid var(--coral-color);
 
 }
@@ -158,6 +214,9 @@ header > div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--coral-color);
+    border-radius: 100px;
+    margin-right: 10px;
 }
 
 #contact-icons-list {
@@ -167,6 +226,8 @@ header > div {
     list-style-type: none;
 }
 
+/* TODO: add on hover effect for icons - color coral; */
+/* TODO: make sure there are no link color changes to the icons */
 i {
     text-decoration: none;
     color: white;
@@ -178,6 +239,9 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--coral-color);
+    border-radius: 100px;
+    margin-left: 10px;
 }
 
 form {

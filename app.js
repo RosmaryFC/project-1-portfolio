@@ -23,6 +23,8 @@ fetch(URL) //starts the fetch process
         for(let i = 0; i < projectsObj.length; i++){
             console.log(projectsObj[i].title);
             const $projectDiv = $('<div>').addClass('project-item');
+            const $projectImgDiv = $('<div>').addClass('project-img-div');
+            const $projectInfoDiv = $('<div>').addClass('project-info-div');
             const $title = $('<h3>').text(projectsObj[i].title);
             const $image = $('<img>').attr('src', projectsObj[i].image);
             const $description = $('<p>').text(projectsObj[i].description);
@@ -34,10 +36,16 @@ fetch(URL) //starts the fetch process
             }
 
             $('#project-items-container').append($projectDiv);
-            $projectDiv.append($title);
-            $projectDiv.append($image);
-            $projectDiv.append($description);
+            $projectDiv.append($projectImgDiv);
+            $projectDiv.append($projectInfoDiv);
+            $projectImgDiv.append($image);
+            $projectInfoDiv.append($title);
+            $projectInfoDiv.append($description);
             $title.append($url);
+
+
+
+
 
         }
     }
