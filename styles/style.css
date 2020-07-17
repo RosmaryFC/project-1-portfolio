@@ -153,18 +153,14 @@ header > div {
     padding: 2em 10em;
     width: 100%;
     height: 500px;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* border: 2px solid red; */
 }
 
 .project-img-div {
-    /* border: 2px solid black; */
     border: 30px solid var(--cream-color);
     background-color: var(--cream-color);
-    /* border-radius: 100px; */
     border-radius: 100px 0 0 100px;
 }
 
@@ -176,7 +172,6 @@ header > div {
 /* TODO: align text in center of box */
 .project-info-div {
     width: 500px;
-    /* border: 2px solid gold; */
     border: 10px solid var(--cream-color);
     background-color: var(--cream-color);
     border-radius: 0 100px 100px 0;
@@ -269,5 +264,20 @@ form > button {
 }
 
 
+/* ----------------MEDIA QUERY TABLET------------------- */
 
+/* ----------------NAV------------------- */
+/* ----------------HEADER------------------- */
+/* ----------------QUOTE------------------- */
+/* ----------------ABOUT ME------------------- */
+/* ----------------PROJECTS------------------- */
+/* ----------------CONTACT ME------------------- */
 
+/* ----------------CONTACTS QUERY MOBILE------------------- */
+
+/* ----------------NAV------------------- */
+/* ----------------HEADER------------------- */
+/* ----------------QUOTE------------------- */
+/* ----------------ABOUT ME------------------- */
+/* ----------------PROJECTS------------------- */
+/* ----------------CONTACT ME------------------- */

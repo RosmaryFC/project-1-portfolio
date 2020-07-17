@@ -89,7 +89,7 @@ I've broken down each part of the website to smaller tasks below.
 | Projects - Grid Layout                     | H        | 2hr            | 4hr            | -hr         |
 | Projects - Projects Descriptions - JSON    | H        | 2hr            | 0.5hr          | -hr         |
 | Projects - Aligning all the elements       | H        | 0hr            | 6hr            | -hr         |
-| Contact Me - Text box                      | H        | 2hr            | 1hr            | -hr         |
+| Contact Me - Text box                      | H        | 2hr            | 5hr            | -hr         |
 | Contact Me - Paragraph                     | H        | 1hr            | 1hr            | -hr         |
 | Contact me - Github, Email, LinkedIn Icons | M        | 1hr            | 1hr            | -hr         |
 | Projects - Aligning all the elements       | H        | 0hr            | 6hr            | -hr         |
@@ -103,7 +103,7 @@ I've broken down each part of the website to smaller tasks below.
 | Media Mobile - About Me                    | M        | 1hr            | -hr            | -hr         |
 | Media Mobile - Contact me                  | M        | 1hr            | -hr            | -hr         |
 | Deployment Time                            | M        | 6hr            | -hr            | -hr         |
-| Research                                   | M        | 0hr            | 6hr            | -hr         |
+| Research                                   | M        | 0hr            | 14hr           | -hr         |
 | Total                                      |          | 37hrs          | 17.5hr         | -hr         |
 
 #### PostMVP
@@ -112,7 +112,7 @@ I've broken down each part of the website to smaller tasks below.
 | Animations                                 | L        | 4hr            | -hr            | -hr         |
 | Media Mobile - Drop Down Nav Bar           | M        | 4hr            | -hr            | -hr         |
 | Projects - Projects Descriptions on Hover  | H        | 4hr            | -hr            | -hr         |
-| Improve styling of website                 | H        | 4hr            | -hr            | -hr         |
+| Improve styling of website                 | H        | 4hr            | 4hr            | -hr         |
 | Total                                      |          | 16hrs          | -hr            | -hr         |
 
 
@@ -138,6 +138,8 @@ function reverse(string) {
  Use this section to list of all major issues encountered and their resolution.
 
  wanted to be able to easily change colors down the line: found this [site](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) that helped me set colors to variables. Another [site](https://css-tricks.com/breaking-css-custom-properties-out-of-root-might-be-a-good-idea/) relating to topic.
+
+ I was trying to figure out how to sned an email through the form element. I initially was trying to follow [this](https://blog.mailtrap.io/javascript-send-email/) tutorial which was going to amke me create a server and I feel was more for sending emails to users. I felt like there was a easier way, and I heard about others using google forms. Then I came across [this](https://www.youtube.com/watch?v=5cx-ZjawL6Q) tutorial that shows you how to use your form data to upload data into a google sheet without creating servers or anything like that.
 
 #### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                

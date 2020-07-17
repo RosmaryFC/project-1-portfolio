@@ -49,3 +49,22 @@ fetch(URL) //starts the fetch process
 
         }
     }
+
+
+// function sendForm() {
+//     console.log('SEND FORM');
+//     //logic for google form
+//     const FORM_URL = "";
+
+//     const name = $("#formname").val();
+//     const email = $("#formemail").val();
+//     const message = $("#formmessage").val();
+
+//     console.log(name, email, message);
+
+//     const CALLBACK_URL = "?callback-ctrlq&formname="+name+"&formemail="+email+"&formmessage="+message+"&action=insert";
+
+//     //TODO: incorporate reset must add reset form id to form
+//     // $('#resetForm'.reset());
+
+// }
