@@ -10,9 +10,11 @@
     --script-font: 'Dancing Script', cursive;
 }
 
+/* TODO: fix x overflow issue */
 body {
     margin: 0;
     font-family: var(--main-font);
+    /* overflow-x: hidden; */
 }
 
 /* ----------------NAV------------------- */

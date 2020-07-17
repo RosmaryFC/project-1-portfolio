@@ -50,21 +50,30 @@ fetch(URL) //starts the fetch process
         }
     }
 
+//on click for form button
+function sendForm() {
+    console.log('SEND FORM');
+    //logic for google form
+    const FORM_URL = "https://script.google.com/macros/s/AKfycbwYE97cmQJ4b5DSNZfYCPlDDMoki06pRF4bH-7EUJxqeAcoNL0/exec";
 
-// function sendForm() {
-//     console.log('SEND FORM');
-//     //logic for google form
-//     const FORM_URL = "";
+    const name = $("#formname").val();
+    const email = $("#formemail").val();
+    const message = $("#formmessage").val();
 
-//     const name = $("#formname").val();
-//     const email = $("#formemail").val();
-//     const message = $("#formmessage").val();
+    console.log(name, email, message);
 
-//     console.log(name, email, message);
+    const CALLBACK_URL = FORM_URL + "?callback-ctrlq&formname="+name+"&formemail="+email+"&formmessage="+message+"&action=insert";
 
-//     const CALLBACK_URL = "?callback-ctrlq&formname="+name+"&formemail="+email+"&formmessage="+message+"&action=insert";
+    const request = jQuery.ajax({
+        crossDomain:true,
+        url:CALLBACK_URL,
+        method:"GET",
+        dataType:"jsonp"
+    });
 
-//     //TODO: incorporate reset must add reset form id to form
-//     // $('#resetForm'.reset());
+    console.log(request);
 
-// }
+    //TODO: incorporate reset must add reset form id to form
+    $('#contact-message-inputs'.reset());
+
+}
