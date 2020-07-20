@@ -10,9 +10,9 @@
     --script-font: 'Dancing Script', cursive;
 }
 
-* {
+/* * {
     border: 2px solid gold;
-}
+} */
 
 /* TODO: fix x overflow issue */
 body {
