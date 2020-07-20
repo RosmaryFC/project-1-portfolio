@@ -212,7 +212,7 @@ header > div {
 #contact-container {
     background-color: var(--rose-quartz-color);
     color: white;
-    padding: 1em 10em;
+    padding: 1em 2em;
     border-top:5px solid var(--coral-color);
 
 }
@@ -298,18 +298,38 @@ form > button {
         margin-right: auto;
     }
     /* ----------------HEADER------------------- */
+    header > div {
+        flex-direction: column;
+    }
+
+    #my-image {
+        min-width:30%;
+    }
+
     /* ----------------QUOTE------------------- */
     /* ----------------ABOUT ME------------------- */
     /* ----------------PROJECTS------------------- */
 
     .project-item {
-        padding: 2em 10em;
-        width: 80%;
-        height: 500px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+    }
+    .project-img-div {
+        border-radius: 100px 100px 0 0;
+        height: 400px;
     }
 
     .project-img-div img {
         width: 400px;
+    }
+
+    .project-info-div {
+        border-radius: 0 0 100px 100px;
+        border: 30px solid var(--cream-color);
+        height: 300px;
+
     }
 
     /* ----------------CONTACT ME------------------- */
@@ -318,7 +338,6 @@ form > button {
         "rightSide"
         "leftSide"
         ;
-
     }
 
     #contact-icons-container {
@@ -326,7 +345,6 @@ form > button {
         width: 500px;
         margin-top: 1em;
         margin-bottom: 1em;
-    
     }
 
 
@@ -336,8 +354,6 @@ form > button {
         margin-top: 1em;
         margin-bottom: 1em;
     }
-
-
 }
 
 
