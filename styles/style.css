@@ -169,6 +169,7 @@ header > div {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 500px;
 }
 
 /* TODO: align img in center of box */
@@ -228,7 +229,7 @@ header > div {
     background-color: var(--coral-color);
     border-radius: 100px;
     margin-right: 10px;
-    min-width: 500px;
+    width: 450px;
     max-width: 1000px;
     margin: auto;
 }
@@ -256,7 +257,7 @@ i {
     background-color: var(--coral-color);
     border-radius: 100px;
     margin-left: 10px;
-    min-width: 500px;
+    width: 450px;
     max-width: 1000px;
     margin: auto;
 }
@@ -287,58 +288,51 @@ form > button {
 
 /* ----------------MEDIA QUERY TABLET 900px------------------- */ 
 @media only screen and (max-width: 960px) {  
-/* ----------------NAV------------------- */
-/* center nav */
-nav > ul {
-    /* align-content: center; */
-    /* align-self: center; */
-    margin-left: auto;
-    margin-right: auto;
-}
-/* ----------------HEADER------------------- */
-/* TODO: fix image stretch issue. when screen too small it repeates */
+    /* ----------------NAV------------------- */
+    nav > ul {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* ----------------HEADER------------------- */
 
-/* ----------------QUOTE------------------- */
-/* TODO:author name goes off to the right */
-/* ----------------ABOUT ME------------------- */
-/* ----------------PROJECTS------------------- */
+    /* ----------------QUOTE------------------- */
+    /* ----------------ABOUT ME------------------- */
+    /* ----------------PROJECTS------------------- */
 
-.project-item {
-    padding: 2em 10em;
-    width: 80%;
-    height: 500px;
-}
+    .project-item {
+        padding: 2em 10em;
+        width: 80%;
+        height: 500px;
+    }
 
-.project-img-div img {
-    width: 400px;
-}
+    .project-img-div img {
+        width: 400px;
+    }
 
-/* ----------------CONTACT ME------------------- */
-#contact-icons-message-container {
-    grid-template-areas: 
-    "rightSide"
-    "leftSide"
-    ;
+    /* ----------------CONTACT ME------------------- */
+    #contact-icons-message-container {
+        grid-template-areas: 
+        "rightSide"
+        "leftSide"
+        ;
 
-}
+    }
 
-#contact-icons-container {
-    height: 260px;
-    width: 500px;
-    margin-top: 1em;
-    margin-bottom: 1em;
- 
-}
+    #contact-icons-container {
+        height: 260px;
+        width: 500px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    
+    }
 
 
-#contact-message-container {
-    height: 260px;
-    width: 500px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-
+    #contact-message-container {
+        height: 260px;
+        width: 500px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
 
 
 }
@@ -348,15 +342,68 @@ nav > ul {
 
 @media only screen and (max-width: 640px) {
 
-/* ----------------NAV------------------- */
-/* TODO:  hamburger menu */
-/* ----------------HEADER------------------- */
-/* ----------------QUOTE------------------- */
+    /* ----------------NAV------------------- */
+    /* TODO:  hamburger menu */
+    nav > ul {
+        padding: 0;
+    }
 
-/* ----------------ABOUT ME------------------- */
-/* ----------------PROJECTS------------------- */
-/* ----------------CONTACT ME------------------- */
+    nav > ul > li a:link {
+        padding: 5px 10px;
 
+    }
+    /* ----------------HEADER------------------- */
+    /* TODO: fix image stretch issue. when screen too small it repeates */
+
+    header > div {
+        flex-direction: column;
+    }
+
+    #my-image {
+        min-width:30%;
+    }
+
+
+    /* ----------------QUOTE------------------- */
+
+    #quote-author {
+        padding-left: 0;
+    }
+
+    /* ----------------ABOUT ME------------------- */
+    /* ----------------PROJECTS------------------- */
+    .project-item {
+        flex-direction: column;
+        padding-top:2em;
+        padding-bottom:2em;
+        padding-left:0;
+        padding-right:0;
+
+    }
+
+    .project-img-div {
+        border-radius: 100px 100px 0 0;
+        width: 400px;
+    }
+
+    .project-img-div img {
+        width: 300px;
+    }
+
+    .project-info-div {
+        border-radius: 0 0 100px 100px;
+        width: 400px;
+        border: 30px solid var(--cream-color);
+
+    }
+
+
+    /* ----------------CONTACT ME------------------- */
+
+    #contact-container {
+        padding-left: 1em;
+        padding-right: 1em;;
+    }
 
 }
 
