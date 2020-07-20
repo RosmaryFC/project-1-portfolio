@@ -7,10 +7,10 @@
 |Day 1| Project Description                          | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline      | Complete
 |Day 2| Creating and editing  JSON file              | Complete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 4| MVP & Bug Fixes                              | Incomplete
 |Day 5| Final Touches                                | Incomplete
-|Day 5| Deployment                                   | Incomplete
+|Day 5| Deployment                                   | Complete
 |Day 6| Present                                      | Incomplete
 
 
@@ -102,17 +102,18 @@ I've broken down each part of the website to smaller tasks below.
 | Media Mobile - Header                      | M        | 1hr            | -hr            | -hr         |
 | Media Mobile - About Me                    | M        | 1hr            | -hr            | -hr         |
 | Media Mobile - Contact me                  | M        | 1hr            | -hr            | -hr         |
-| Deployment Time                            | M        | 6hr            | -hr            | -hr         |
+| Deployment Time                            | M        | 6hr            | 0.16hr            | -hr         |
 | Research                                   | M        | 0hr            | 14hr           | -hr         |
-| Total                                      |          | 37hrs          | 17.5hr         | -hr         |
+| Total                                      |          | 37hrs          | 17.66hr         | -hr         |
 
 #### PostMVP
 | Component                                  | Priority | Estimated Time | Time Investted | Actual Time |
 | ---                                        | :---:    |  :---:         | :---:          | :---:       |
 | Animations                                 | L        | 4hr            | -hr            | -hr         |
 | Media Mobile - Drop Down Nav Bar           | M        | 4hr            | -hr            | -hr         |
-| Projects - Projects Descriptions on Hover  | H        | 4hr            | -hr            | -hr         |
-| Improve styling of website                 | H        | 4hr            | 4hr            | -hr         |
+| Projects - Projects Descriptions on Hover  | H        | 4hr            | 0hr            | -hr         |
+| Projects - slide in animation              | H        | 4hr            | 0hr            | -hr         |
+| Improve styling of website                 | H        | 4hr            | 6hr            | -hr         |
 | Total                                      |          | 16hrs          | -hr            | -hr         |
 
 
@@ -122,15 +123,46 @@ I've broken down each part of the website to smaller tasks below.
  Use this section to list all supporting libraries and thier role in the project.
  - JQuery
  - font-awesome
+ - Google Sheets
+
 
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
 
+For the form section, I followed along with [this]() tutorial to create a google script that takes in the values of what is put into the form and puts it into a google sheet.
+
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+//this piece of code the google script
+function doGet(e) {
+  var op = e.parameter.action;
+  var url = "https://docs.google.com/spreadsheets/d/1P85QuIhm_NNsDkEvsXSc6MfYfWpGZDuXhFmZVA05SVg/edit?usp=sharing";
+  var ss = SpreadsheetApp.openByUrl(url);
+  var sheet = ss.getSheetByName("Sheet1");
+  if(op="insert")
+    return insert_value(e,sheet);
+}
+
+function insert_value(request,sheet){
+  var d = new Date();
+  var currentTime = d.toLocaleString();
+  var name = request.parameter.formname;
+  var email = request.parameter.formemail;
+  var message = request.parameter.formmessage;
+  
+  var rowContents = [currentTime,name, email, message];
+  var rowData = sheet.appendRow(rowContents);
+  var result="Insertion Seccessful";
+  
+  result = JSON.stringify({
+    "result": result
+  });
+  
+  return ContentService
+   .createTextOutput(request.parameter.callback + "(" + result + ")")
+   .setMimeType(ContentService.MimeType.JAVASCRIPT);
+  
 }
 ```
 
