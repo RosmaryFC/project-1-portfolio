@@ -228,7 +228,7 @@ header > div {
     background-color: var(--coral-color);
     border-radius: 100px;
     margin-right: 10px;
-    width: 650px;
+    min-width: 500px;
     max-width: 1000px;
     margin: auto;
 }
@@ -256,7 +256,7 @@ i {
     background-color: var(--coral-color);
     border-radius: 100px;
     margin-left: 10px;
-    width: 650px;
+    min-width: 500px;
     max-width: 1000px;
     margin: auto;
 }
