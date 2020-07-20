@@ -10,11 +10,6 @@
     --script-font: 'Dancing Script', cursive;
 }
 
-/* * {
-    border: 2px solid gold;
-} */
-
-/* TODO: fix x overflow issue */
 body {
     margin: 0;
     font-family: var(--main-font);
@@ -118,7 +113,7 @@ header > div {
     color: var(--coral-color);
     background-color: var(--cream-color);
     text-align: center;
-    padding: 1em 10em;
+    padding: 1em 1em;
 }
 
 #quote {
@@ -136,7 +131,8 @@ header > div {
 #about-me-container {
     color: var(--coral-color);
     border-bottom: 5px solid var(--cream-color);
-    padding: 1em 10em;
+    padding: 1em 1em;
+    text-align: center;
 }
 
 /* ----------------PROJECTS------------------- */
@@ -176,15 +172,9 @@ header > div {
     width: 500px;
 }
 
-/* TODO: align img in center of box */
 .project-img-div img {
     width: 500px;
     border-radius: 100px;
-    /* text-align: center; */
-    /* margin: auto; */
-    /* margin-top: 50%;
-    margin-bottom: 50%; */
-    
 }
 
 /* TODO: align text in center of box */
@@ -242,7 +232,7 @@ header > div {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-
+    padding-inline-start: 0;
 }
 
 /* TODO: add on hover effect for icons - color coral; */
@@ -250,7 +240,12 @@ header > div {
 i {
     text-decoration: none;
     color: white;
-    padding: 0 1em;
+    padding: 20px;
+}
+
+#contact-icons-paragraph {
+    font-weight: bold;
+    font-size: 1.17em;
 }
 
 #contact-message-container {
@@ -316,6 +311,7 @@ form > button {
         align-items: center;
         height: 700px;
     }
+
     .project-img-div {
         border-radius: 100px 100px 0 0;
         height: 400px;
@@ -329,7 +325,6 @@ form > button {
         border-radius: 0 0 100px 100px;
         border: 30px solid var(--cream-color);
         height: 300px;
-
     }
 
     /* ----------------CONTACT ME------------------- */
@@ -430,14 +425,68 @@ form > button {
 
     /* ----------------NAV------------------- */
 
+    /* ----------------SUB HEADERS------------------- */
+
+
     /* ----------------HEADER------------------- */
+
+
+    #my-image {
+        width:200px;
+    }
+
+    #name-container {
+        text-align: center;
+    }
+
+    #name {
+        font-size: 3em;
+    }
 
     /* ----------------QUOTE------------------- */
 
     /* ----------------ABOUT ME------------------- */
     /* ----------------PROJECTS------------------- */
 
+    .project-img-div {
+        border-radius: 100px 100px 0 0;
+        width: 350px;
+        border: 0;
+    }
+
+    .project-img-div img {
+        width: 325px;
+    }
+
+    .project-info-div {
+        border-radius: 0 0 100px 100px;
+        border: 30px solid var(--cream-color);
+        width: 350px;
+        border: 0;
+    }
+
+
     /* ----------------CONTACT ME------------------- */
+
+
+    #contact-icons-container {
+        height: 260px;
+        width: 350px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+
+    #contact-message-container {
+        height: 260px;
+        width: 350px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    form > button {
+        align-self: center;
+    }
 
 }
 
