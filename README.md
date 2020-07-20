@@ -16,7 +16,7 @@
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+[Link to final project](https://rosmaryfermin.netlify.app/)
 
 Introducing, Our Unit-1 project for General Assembly's SEI program.
 For Project 1, I will be creating a personal website that displays work I have done so far throughout the program. This project will include a 
