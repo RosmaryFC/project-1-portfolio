@@ -290,7 +290,9 @@ form > button {
     background-color: white;
     padding: 5px 20px;
     align-self: flex-end;
+
 }
+
 
 /* ----------------MEDIA QUERY TABLET 900px------------------- */ 
 @media only screen and (max-width: 960px) {  
@@ -374,7 +376,6 @@ form > button {
 
     }
     /* ----------------HEADER------------------- */
-    /* TODO: fix image stretch issue. when screen too small it repeates */
 
     header > div {
         flex-direction: column;

@@ -74,6 +74,13 @@ function sendForm() {
     console.log(request);
 
     //TODO: incorporate reset must add reset form id to form
-    $('#contact-message-inputs'.reset());
+    $("#formname").val('');
+    $("#formemail").val('');
+    $("#formmessage").val('');
+
+
+    //TODO: create prompt after user sends info to database
+    alert(" Thanks for reaching out! I look forwarrd to reading your message.");
+
 
 }
