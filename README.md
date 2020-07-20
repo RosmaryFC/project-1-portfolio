@@ -113,8 +113,8 @@ I've broken down each part of the website to smaller tasks below.
 | Media Mobile - Drop Down Nav Bar           | M        | 4hr            | -hr            | -hr         |
 | Projects - Projects Descriptions on Hover  | H        | 4hr            | 0hr            | -hr         |
 | Projects - slide in animation              | H        | 4hr            | -hr            | -hr         |
-| Improve styling of website                 | H        | 4hr            | -hr            | -hr         |
-| Total                                      |          | 16hrs          | -hr            | -hr         |
+| Improve styling of website                 | H        | 4hr            | 7hr            | -hr         |
+| Total                                      |          | 16hrs          | 7hr            | -hr         |
 
 
 

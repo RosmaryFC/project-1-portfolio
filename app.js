@@ -43,10 +43,6 @@ fetch(URL) //starts the fetch process
             $projectInfoDiv.append($description);
             $title.append($url);
 
-
-
-
-
         }
     }
 
@@ -73,13 +69,13 @@ function sendForm() {
 
     console.log(request);
 
-    //TODO: incorporate reset must add reset form id to form
+    //incorporate reset to inputs
     $("#formname").val('');
     $("#formemail").val('');
     $("#formmessage").val('');
 
 
-    //TODO: create prompt after user sends info to database
+    //creates prompt after user sends info to database
     alert(" Thanks for reaching out! I look forwarrd to reading your message.");
 
 
