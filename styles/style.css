@@ -10,6 +10,10 @@
     --script-font: 'Dancing Script', cursive;
 }
 
+* {
+    border: 2px solid gold;
+}
+
 /* TODO: fix x overflow issue */
 body {
     margin: 0;
@@ -154,7 +158,7 @@ header > div {
 /* DIVs added using Jquery */
 /* TODO: add transition for projects coming into the page */
 .project-item {
-    padding: 2em 10em;
+    padding: 2em 0;
     width: 100%;
     height: 500px;
     display: flex;
@@ -294,7 +298,6 @@ form > button {
         margin-right: auto;
     }
     /* ----------------HEADER------------------- */
-
     /* ----------------QUOTE------------------- */
     /* ----------------ABOUT ME------------------- */
     /* ----------------PROJECTS------------------- */
@@ -404,6 +407,21 @@ form > button {
         padding-left: 1em;
         padding-right: 1em;;
     }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    /* ----------------NAV------------------- */
+
+    /* ----------------HEADER------------------- */
+
+    /* ----------------QUOTE------------------- */
+
+    /* ----------------ABOUT ME------------------- */
+    /* ----------------PROJECTS------------------- */
+
+    /* ----------------CONTACT ME------------------- */
 
 }
 
