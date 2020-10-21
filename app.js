@@ -32,7 +32,7 @@ fetch(URL) //starts the fetch process
             const $description = $('<p>').text(projectsObj[i].description).addClass('project-description');
 
             const $linksIntro = $('<p>').text('Checkout the site!').addClass('project-links-intro');
-            const $linkList = $('<ul>');
+            const $linkList = $('<ul>').addClass('project-links-list');
             const $itemFrontend = $('<li>');
             const $itemBackend = $('<li>');
             const $itemDeployed = $('<li>');

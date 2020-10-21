@@ -135,7 +135,7 @@ header > div {
 /* ----------------ABOUT ME------------------- */
 
 #about-me-container {
-    color: white;
+    color: var(--cream-color);
     border-bottom: 5px solid var(--cream-color);
     /* border-top: 5px solid var(--dark-coral-color); */
     text-align: center;
@@ -217,18 +217,57 @@ header > div {
     background-color: var(--cream-color);
     border-radius: 0 100px 100px 0;
     color: var(--dusty-rose-color);
+    display: flex;
+    flex-direction: column;
 }
 
-.project-info-div h3 {
+.project-title {
     text-align: center;
     font-size: 2em;
     font-weight: 900;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.115);
+    /* color: var(--dark-coral-color); */
 }
 
 .project-info-div p {
     text-align: center;
+    font-weight: bold;
+    padding: 0 5%;
 }
+
+.project-description {
+    color: var(--dark-coral-color);
+}
+.project-links-intro {
+    font-size: 25px;
+    padding: 15px;
+}
+
+.project-links-list {
+    list-style-type: none;
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.project-links-list > li {
+    margin: 0 10px;
+}
+
+.project-links-list > li > a {
+    color: var(--cream-color);
+    background-color: var(--dark-coral-color);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.project-links-list > li > a:hover {
+    color: var(--cream-color);
+    background-color: var(--coral-color);
+}
+
+
 
 /* ----------------CONTACTS------------------- */
 
@@ -366,7 +405,7 @@ form > button {
     .project-info-div {
         border-radius: 0 0 100px 100px;
         border: 30px solid var(--cream-color);
-        height: 300px;
+        /* height: 800px; */
     }
 
     /* ----------------CONTACT ME------------------- */
@@ -433,12 +472,16 @@ form > button {
         padding-bottom:2em;
         padding-left:0;
         padding-right:0;
+        height: 900px;
+    }
 
+    .project-img-div, .project-info-div {
+        width: 70%;
     }
 
     .project-img-div {
         border-radius: 100px 100px 0 0;
-        width: 400px;
+        /* width: 400px; */
     }
 
     .project-img-div img {
@@ -447,7 +490,7 @@ form > button {
 
     .project-info-div {
         border-radius: 0 0 100px 100px;
-        width: 400px;
+        /* width: 400px; */
         border: 30px solid var(--cream-color);
 
     }
@@ -459,6 +502,15 @@ form > button {
         padding-left: 1em;
         padding-right: 1em;;
     }
+
+    #contact-message-container, #contact-icons-container {
+        width: 90%;
+    }
+
+    form > * {
+        width: 200px;
+    }
+
 
 }
 
@@ -503,6 +555,12 @@ form > button {
         border: 30px solid var(--cream-color);
         width: 350px;
         border: 0;
+        padding-bottom: 20px;
+
+    }
+
+    .project-links-list > li {
+        margin: 0 2px;
     }
 
 
