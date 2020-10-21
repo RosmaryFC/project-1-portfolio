@@ -4,14 +4,16 @@ const URL = "https://spreadsheets.google.com/feeds/list/1WwRy_ACtDyNErhvQjLKHFIj
 fetch(URL) //starts the fetch process
     .then (response => response.json()) //returns the JSON data as a JS object
     .then(data => {
-        console.log(data.feed);
+        console.log("data feed", data.feed);
         //creates an array of parsed objects
         let projects = data.feed.entry.map( entry => {
             return {
                 title: entry.gsx$title.$t,
                 image: entry.gsx$image.$t,
                 description: entry.gsx$description.$t,
-                url: entry.gsx$url.$t
+                urlFrontend: entry.gsx$urlfrontend.$t,
+                urlBackend: entry.gsx$urlbackend.$t,
+                urlDeployed: entry.gsx$deployed.$t
             }
         })
         addProjects(projects);
@@ -25,10 +27,20 @@ fetch(URL) //starts the fetch process
             const $projectDiv = $('<div>').addClass('project-item');
             const $projectImgDiv = $('<div>').addClass('project-img-div');
             const $projectInfoDiv = $('<div>').addClass('project-info-div');
-            const $title = $('<h3>').text(projectsObj[i].title);
-            const $image = $('<img>').attr('src', projectsObj[i].image);
-            const $description = $('<p>').text(projectsObj[i].description);
-            const $url = $('<a>').attr('href', projectsObj[i].url);
+            const $title = $('<h3>').text(projectsObj[i].title).addClass('project-title');
+            const $image = $('<img>').attr('src', projectsObj[i].image).addClass('project-image');
+            const $description = $('<p>').text(projectsObj[i].description).addClass('project-description');
+
+            const $linksIntro = $('<p>').text('Checkout the site!').addClass('project-links-intro');
+            const $linkList = $('<ul>');
+            const $itemFrontend = $('<li>');
+            const $itemBackend = $('<li>');
+            const $itemDeployed = $('<li>');
+
+            const $urlFronted = $('<a>').attr('href', projectsObj[i].urlFrontend).text('Frontend');
+            const $urlBackend = $('<a>').attr('href', projectsObj[i].urlBackend).text('Backend');
+            const $urlDeployed = $('<a>').attr('href', projectsObj[i].urlDeployed).text('Deployed');
+
 
             if($image.attr('src') == ''){
                 //skip project item, do not add!!
@@ -41,7 +53,15 @@ fetch(URL) //starts the fetch process
             $projectImgDiv.append($image);
             $projectInfoDiv.append($title);
             $projectInfoDiv.append($description);
-            $title.append($url);
+            $projectInfoDiv.append($linksIntro);
+
+            $projectInfoDiv.append($linkList);
+            $linkList.append($itemDeployed);
+            $itemDeployed.append($urlDeployed);
+            $linkList.append($itemFrontend);
+            $itemFrontend.append($urlFronted);
+            $linkList.append($itemBackend);
+            $itemBackend.append($urlBackend);
 
         }
     }

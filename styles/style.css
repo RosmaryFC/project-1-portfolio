@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 :root {
-    --cream-color: #F9F1F0 ;
-    --rose-quartz-color: #FADCD9 ;
-    --dusty-rose-color: #F8AFA6 ;
-    --coral-color: #F79489 ;
+    --cream-color: #F9F1F0;
+    --rose-quartz-color: #FADCD9;
+    --dusty-rose-color: #F8AFA6;
+    --coral-color: #F79489;
+    --sky-purple: #767386;
+    --dark-coral-color: #C6766D;
     --main-font: 'Roboto';
     --script-font: 'Dancing Script', cursive;
 }
@@ -122,6 +124,10 @@ header > div {
     font-size: 25px;
 }
 
+#quote > span {
+    border-bottom: 2px dashed var(--dark-coral-color);
+}
+
 #quote-author {
     padding-left: 400px;
 }
@@ -129,10 +135,37 @@ header > div {
 /* ----------------ABOUT ME------------------- */
 
 #about-me-container {
-    color: var(--coral-color);
+    color: white;
     border-bottom: 5px solid var(--cream-color);
-    padding: 1em 1em;
+    /* border-top: 5px solid var(--dark-coral-color); */
     text-align: center;
+}
+
+#about-me-container > h2 {
+    color: var(--coral-color);
+}
+
+#about-me-container > div {
+    border: 2px solid var(--dark-coral-color);
+    border-radius: 100px;
+    background-color: var(--dark-coral-color);
+    margin: 5% 10%;
+
+}
+
+#about-me-container > div > p {
+    /* color: var(--dark-coral-color); */
+    font-weight: bold;
+    padding: 5px 10%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.140);
+    font-size: 20px;
+
+}
+
+#p1 {
+    /* font-weight: bold; */
+    /* color: var(--dark-coral-color); */
+    font-size: 50px;
 }
 
 /* ----------------PROJECTS------------------- */
