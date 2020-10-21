@@ -37,10 +37,18 @@ fetch(URL) //starts the fetch process
             const $itemBackend = $('<li>');
             const $itemDeployed = $('<li>');
 
-            const $urlFronted = $('<a>').attr('href', projectsObj[i].urlFrontend).text('Frontend');
-            const $urlBackend = $('<a>').attr('href', projectsObj[i].urlBackend).text('Backend');
-            const $urlDeployed = $('<a>').attr('href', projectsObj[i].urlDeployed).text('Deployed');
-
+            const $urlFronted = $('<a>').attr('href', projectsObj[i].urlFrontend)
+                                    .attr('rel', 'noopener noreferrer')
+                                    .attr('target', '_blank')
+                                    .text('Frontend');
+            const $urlBackend = $('<a>').attr('href', projectsObj[i].urlBackend)
+                                    .attr('rel', 'noopener noreferrer')
+                                    .attr('target', '_blank')                                
+                                    .text('Backend');
+            const $urlDeployed = $('<a>').attr('href', projectsObj[i].urlDeployed)
+                                    .attr('rel', 'noopener noreferrer')
+                                    .attr('target', '_blank')
+                                    .text('Deployed');
 
             if($image.attr('src') == ''){
                 //skip project item, do not add!!
