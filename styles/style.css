@@ -510,6 +510,7 @@ form > button {
 
     #contact-message-container, #contact-icons-container {
         width: 90%;
+        padding: 5px;
     }
 
     form > * {
