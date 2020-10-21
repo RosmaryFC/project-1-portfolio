@@ -382,6 +382,10 @@ form > button {
         min-width:30%;
     }
 
+    #name {
+        font-size: 3em;
+    }
+
     /* ----------------QUOTE------------------- */
     /* ----------------ABOUT ME------------------- */
     /* ----------------PROJECTS------------------- */
@@ -454,7 +458,8 @@ form > button {
     }
 
     #my-image {
-        min-width:30%;
+        /* min-width:30%; */
+        width: 200px;
     }
 
 
