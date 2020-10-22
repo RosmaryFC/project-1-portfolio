@@ -49,7 +49,7 @@ fetch(URL) //starts the fetch process
                                     .attr('rel', 'noopener noreferrer')
                                     .attr('target', '_blank')
                                     .text('Deployed');
-
+                                    
             if($image.attr('src') == ''){
                 //skip project item, do not add!!
                 continue;

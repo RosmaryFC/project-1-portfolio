@@ -208,6 +208,8 @@ header > div {
 .project-img-div img {
     width: 500px;
     border-radius: 100px;
+    height: 300px;
+    object-fit:cover;
 }
 
 /* TODO: align text in center of box */
@@ -394,7 +396,9 @@ form > button {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 700px;
+        height: 800px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .project-img-div {
