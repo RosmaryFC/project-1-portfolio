@@ -104,7 +104,7 @@ function sendForm() {
 
 
     //creates prompt after user sends info to database
-    alert(" Thanks for reaching out! I look forwarrd to reading your message.");
+    alert(" Thanks for reaching out! I look forward to reading your message.");
 
 
 }
